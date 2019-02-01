@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Jan 17 18:06:11 2019
-
-@author: YASH BHAIYA
-"""
 
 import pyttsx3;
 import speech_recognition as sr
@@ -23,8 +17,6 @@ try:
     for token in doc:        #for getting each word
             if token.pos_ == "NOUN":
                 print(token.text,token.pos_)
-#for chunk in doc.noun_chunks:
-#        print(chunk.text, chunk.label_)
     engine = pyttsx3.init();
     engine.say("You said " + r.recognize_google(audio));
     engine.runAndWait() ;
