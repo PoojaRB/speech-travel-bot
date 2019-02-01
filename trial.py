@@ -11,7 +11,7 @@ for token in doc:        #for getting each word
         print(token.text,token.pos_)
         nou=token.text;
         print(nou)
-placeApi.findThePlaces('supermarket')
+placeApi.findThePlaces(nou)
 #placeApi.findThePlaces("restaurant")
 speechSynthesizer.synthesize(toSpeak)
 
