@@ -7,8 +7,9 @@ def synthesize(toSpeak):
     engine.setProperty('voice', en_voice_id)
     engine.setProperty('rate', 180)
     engine.say(toSpeak);
+    print("BOT: "+toSpeak)
     engine.runAndWait() ;
     
-synthesize('Gents UG Mess. AA RENTALS at Kalavakkam with rating 2.5')
+
         
 

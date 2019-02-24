@@ -1,30 +1,20 @@
-import speechSynthesizer 
-import speechRecognizer
+import speechRecognizer as sr
 import spacy
-import placeApi
+import nearby
+import speechSynthesizer as ss
+import time
+import rasa_testing as rt
 
-total_results= []
-i=1
-nou=''
-nlp = spacy.load('en')
-toSpeak=speechRecognizer.recognize()
-doc = nlp(toSpeak)
-for token in doc:        #for getting each word
-   if token.pos_ == "NOUN":
-        print(token.text,token.pos_)
-        nou=token.text;
-        print(nou)
-total_results=placeApi.findThePlaces(nou)
-for t in total_results:
-    if i < 11 :
-        tname= str(t[1])
-        trating= str(t[2])
-        tvicinity=str(t[3])
-        toSpeak = tname+" at "+tvicinity+" with rating "+trating
-        print(toSpeak)
-        speechSynthesizer.synthesize(toSpeak)
-        i+=1
-#placeApi.findThePlaces("restaurant")church lodging bakery cafe zoo park 
-#speechSynthesizer.synthesize(toSpeak)
+temp = "What type of place do you want to visit?"
+ss.synthesize(temp)
+placeId = nearby.findNearbyPlace()
+print(placeId)
+askUser = "Do you want a brief about the place or any specific details?"
+ss.synthesize(askUser)
+response = sr.recognize();
+intent = rt.findIntent(response)
+print(intent)
 
-#check
+    
+
+    

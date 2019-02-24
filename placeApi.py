@@ -13,7 +13,7 @@ def findThePlaces(domainName):
     
     def get_nearby_places(coordinates, business_type, next_page):
     	URL = ('https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='
-    		+coordinates+'&radius=1000&key='+ api_key +'&type='
+    		+coordinates+'&radius=10000&key='+ api_key +'&type='
     		+business_type+'&pagetoken='+next_page)
     	r = requests.get(URL)
     	response = r.text
@@ -30,10 +30,10 @@ def findThePlaces(domainName):
                 vicinity = result['vicinity']
             else:
                 vicinity = "not available"
-            #place_id = result['place_id']
+            place_id = result['place_id']
             #website = get_place_website(place_id)
-            #print([business_type, place_name,rating])
-            total_results.append([business_type, place_name,rating,vicinity])
+            #print([business_type, place_name,vicinity,rating,place_id])
+            total_results.append([business_type, place_name,rating,vicinity,place_id])
     	try:
     		next_page_token = python_object["next_page_token"]
     	except KeyError:
@@ -44,7 +44,8 @@ def findThePlaces(domainName):
     
     
     
-    get_nearby_places('12.7517236,80.1968122', domainName , '')
+    get_nearby_places('13.086522, 80.256405', domainName , '')
+  #  get_nearby_places('9.922209, 78.115099', domainName , '')
     
     return total_results
-#findThePlaces("restaurant")
+#findThePlaces("hindu_temple")

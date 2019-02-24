@@ -4,10 +4,9 @@ def recognize():
     r = sr.Recognizer()
     with sr.Microphone() as source:
         r.adjust_for_ambient_noise(source)
-        print("Speak")
         audio = r.listen(source)
     try:
-        print("You said " + r.recognize_google(audio));
+        print("USER: " + r.recognize_google(audio));
         youSaid= r.recognize_google(audio)
     except sr.UnknownValueError:
         print("Could not understand audio")

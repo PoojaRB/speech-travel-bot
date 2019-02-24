@@ -17,6 +17,8 @@ try:
     for token in doc:        #for getting each word
             if token.pos_ == "NOUN":
                 print(token.text,token.pos_)
+    for word in doc.ents:
+            print("value",word.text,"entity",word.label_,"start",word.start_char,"end",word.end_char)
     engine = pyttsx3.init();
     engine.say("You said " + r.recognize_google(audio));
     engine.runAndWait() ;

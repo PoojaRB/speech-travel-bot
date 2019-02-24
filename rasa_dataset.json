@@ -1,0 +1,874 @@
+{
+  "rasa_nlu_data": {
+    "regex_features": [
+      {
+        "name": "zipcode",
+        "pattern": "[0-9]{5}"
+      },
+      {
+        "name": "greet",
+        "pattern": "hey[^\\s]*"
+      }
+    ],
+    "entity_synonyms": [
+      {
+        "value": "chinese",
+        "synonyms": ["Chinese", "Chines", "chines"]
+      },
+      {
+        "value": "vegetarian",
+        "synonyms": ["veggie", "vegg"]
+      }
+    ],
+    "common_examples": [
+      {
+        "text": "hey", 
+        "intent": "greet", 
+        "entities": []
+      }, 
+      {
+        "text": "howdy", 
+        "intent": "greet", 
+        "entities": []
+      }, 
+      {
+        "text": "hey there",
+        "intent": "greet", 
+        "entities": []
+      }, 
+      {
+        "text": "hello", 
+        "intent": "greet", 
+        "entities": []
+      }, 
+      {
+        "text": "hi", 
+        "intent": "greet", 
+        "entities": []
+      },
+      {
+        "text": "good morning",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "good evening",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "dear sir",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "yes", 
+        "intent": "affirm", 
+        "entities": []
+      }, 
+      {
+        "text": "yep", 
+        "intent": "affirm", 
+        "entities": []
+      }, 
+      {
+        "text": "yeah", 
+        "intent": "affirm", 
+        "entities": []
+      },
+      {
+        "text": "indeed",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "that's right",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "ok",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "great",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "right, thank you",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "correct",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "great choice",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "sounds really good",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "I would like a brief about the place",
+        "intent": "summary",
+        "entities": []
+      },
+      {
+        "text": "I want some information about the place",
+        "intent": "summary",
+        "entities": []
+      },
+       {
+        "text": "I want to know information about it",
+        "intent": "summary",
+        "entities": []
+      },
+      {
+        "text": "Can you brief me about this place",
+        "intent": "summary",
+        "entities": []
+      },
+
+      {
+        "text": "Give me a brief",
+        "intent": "summary",
+        "entities": []
+      },
+      {
+        "text": "Brief me about the place",
+        "intent": "summary",
+        "entities": []
+      },
+      {
+        "text": "Give me details about the place",
+        "intent": "summary",
+        "entities": []
+      },
+      {
+        "text": "I want some details about this place",
+        "intent": "summary",
+        "entities": []
+      },
+      {
+        "text": "Describe the place",
+        "intent": "summary",
+        "entities": []
+      },
+      {
+        "text": "Tell me more about this place",
+        "intent": "summary",
+        "entities": []
+      },
+       {
+        "text": "I would like to the address of the place",
+        "intent": "address",
+        "entities": []
+      },
+      {
+        "text": "I want the address of the place",
+        "intent": "address",
+        "entities": []
+      },
+       {
+        "text": "I want to know the exact address of  it",
+        "intent": "address",
+        "entities": []
+      },
+      {
+        "text": "Can you give me the address of this place",
+        "intent": "address",
+        "entities": []
+      },
+
+      {
+        "text": "Give me the address",
+        "intent": "address",
+        "entities": []
+      },
+      {
+        "text": "Give me the address of the place",
+        "intent": "address",
+        "entities": []
+      },
+      {
+        "text": "I want the address of  this place",
+        "intent": "address",
+        "entities": []
+      },
+      {
+        "text": "Tell me the address of this place",
+        "intent": "address",
+        "entities": []
+      },
+      {
+        "text": "What is their address",
+        "intent": "address",
+        "entities": []
+      },
+      {
+        "text": "I would like the phone number of the place",
+        "intent": "phone",
+        "entities": []
+      },
+      {
+        "text": "I want the contact number of the place",
+        "intent": "phone",
+        "entities": []
+      },
+       {
+        "text": "I want to know their phone number",
+        "intent": "phone",
+        "entities": []
+      },
+      {
+        "text": "Can you give me the phone number of this place",
+        "intent": "phone",
+        "entities": []
+      },
+      {
+        "text": "Give me the phone number",
+        "intent": "phone",
+        "entities": []
+      },
+      {
+        "text": "Give me the contact number of the place",
+        "intent": "phone",
+        "entities": []
+      },
+      {
+        "text": "I want the contact number of  this place",
+        "intent": "phone",
+        "entities": []
+      },
+      {
+        "text": "Tell me the contact number of this place",
+        "intent": "phone",
+        "entities": []
+      },
+     {
+        "text": "How can I contact this place",
+        "intent": "phone",
+        "entities": []
+      },
+      {
+        "text": "What is their contact number",
+        "intent": "phone",
+        "entities": []
+      },
+      {
+        "text": "I want to contact them",
+        "intent": "phone",
+        "entities": []
+      },
+      {
+        "text": "I would like the rating of the place",
+        "intent": "rating",
+        "entities": []
+      },
+      {
+        "text": "I want the rating of the place",
+        "intent": "rating",
+        "entities": []
+      },
+       {
+        "text": "I want to know their rating",
+        "intent": "rating",
+        "entities": []
+      },
+      {
+        "text": "Can you give me the rating of this place",
+        "intent": "rating",
+        "entities": []
+      },
+      {
+        "text": "Give me the rating",
+        "intent": "rating",
+        "entities": []
+      },
+      {
+        "text": "Give me the rating of the place",
+        "intent": "rating",
+        "entities": []
+      },
+      {
+        "text": "I want the rating of this place",
+        "intent": "rating",
+        "entities": []
+      },
+      {
+        "text": "Tell me the rating of this place",
+        "intent": "rating",
+        "entities": []
+      },
+     {
+        "text": "How has this place been rated",
+        "intent": "rating",
+        "entities": []
+      },
+      {
+        "text": "What is their rating",
+        "intent": "rating",
+        "entities": []
+      },
+      {
+        "text": "How good is this place",
+        "intent": "rating",
+        "entities": []
+      },
+
+      {
+        "text": "i'm looking for a place to eat",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
+        "text": "I want to grab lunch",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
+        "text": "I am searching for a dinner spot",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      
+      {
+        "text": "show me chinese restaurants",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 8,
+            "end": 15,
+            "value": "chinese",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      
+      
+      {
+        "text": "search for restaurants",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      
+      
+      {
+        "text": "I am looking for North-Indian food",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 17,
+            "end": 29,
+            "value": "North-Indian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "I want to go to a seafood restaurant.",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 18,
+            "end": 25,
+            "value": "seafood",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "I want to go to a North-Indian restaurant",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 18,
+            "end": 30,
+            "value": "North-Indian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "Find a restaurant with seafood",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 22,
+            "end": 30,
+            "value": "seafood",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "Find a restaurant with fastfood",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 23,
+            "end": 31,
+            "value": "fastfood",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "Take me to a seafood restaurant",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 13,
+            "end": 25,
+            "value": "South-Indian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "Take me to a South-Indian restaurant",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 13,
+            "end": 25,
+            "value": "South-Indian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "Take me to temple",
+        "intent": "temple_search",
+        "entities": []
+      },
+      {
+        "text": "Is there a temple nearby",
+        "intent": "temple_search",
+        "entities": []
+      },
+      {
+        "text": "Are there any temples around",
+        "intent": "temple_search",
+        "entities": []
+      },
+      {
+        "text": "I would like to visit a temple today",
+        "intent": "temple_search",
+        "entities": []
+      },
+      {
+        "text": "I want to go to a temple today",
+        "intent": "temple_search",
+        "entities": []
+      }, 
+      {
+        "text": "Show me some temples",
+        "intent": "temple_search",
+        "entities": []
+      },
+      {
+        "text": "Temple near me",
+        "intent": "temple_search",
+        "entities": []
+      },
+      {
+        "text": "Take me to mosque",
+        "intent": "mosque_search",
+        "entities": []
+      },
+      {
+        "text": "Is there a mosque nearby",
+        "intent": "mosque_search",
+        "entities": []
+      },
+      {
+        "text": "Are there any mosques around",
+        "intent": "mosque_search",
+        "entities": []
+      },
+      {
+        "text": "I would like to visit a mosque today",
+        "intent": "mosque_search",
+        "entities": []
+      }, 
+      {
+        "text": "Show me some mosques",
+        "intent": "mosque_search",
+        "entities": []
+      },
+      {
+        "text": "mosque near me",
+        "intent": "mosque_search",
+        "entities": []
+      },
+      {
+        "text": "Take me to church",
+        "intent": "church_search",
+        "entities": []
+      },
+      {
+        "text": "Is there a church nearby",
+        "intent": "church_search",
+        "entities": []
+      },
+      {
+        "text": "Are there any churches around",
+        "intent": "church_search",
+        "entities": []
+      },
+      {
+        "text": "I would like to visit a church today",
+        "intent": "church_search",
+        "entities": []
+      }, 
+      {
+        "text": "Show me some churches",
+        "intent": "church_search",
+        "entities": []
+      },
+      {
+        "text": "church near me",
+        "intent": "church_search",
+        "entities": []
+      },
+      {
+        "text": "Take me to a place of worship",
+        "intent": "worship_search",
+        "entities": []
+      },
+      {
+        "text": "Is there a place of worship nearby",
+        "intent": "worship_search",
+        "entities": []
+      },
+      {
+        "text": "Are there any places of worship around",
+        "intent": "worship_search",
+        "entities": []
+      },
+      {
+        "text": "I would like to visit a place of worship today",
+        "intent": "worship_search",
+        "entities": []
+      }, 
+      {
+        "text": "Show me some places of worship",
+        "intent": "worship_search",
+        "entities": []
+      },
+      {
+        "text": "place of worship near me",
+        "intent": "worship_search",
+        "entities": []
+      },
+        {
+        "text": "I need to withdraw cash",
+        "intent": "atm_search",
+        "entities": []
+      },
+      {
+        "text": "Is there an atm nearby",
+        "intent": "atm_search",
+        "entities": []
+      },
+      {
+        "text": "ATMs near me",
+        "intent": "atm_search",
+        "entities": []
+      },
+      {
+        "text": "find me any atm",
+        "intent": "atm_search",
+        "entities": []
+      },
+      {
+        "text": "I need money",
+        "intent": "atm_search",
+        "entities": []
+      },
+      {
+        "text": "Tell me where the closest atm is",
+        "intent": "atm_search",
+        "entities": []
+      },   
+      {
+        "text": "Which zoo is famous here",
+        "intent": "zoo",
+        "entities": []
+      },
+      {
+        "text": "Find me a zoo",
+        "intent": "zoo",
+        "entities": []
+      },
+      {
+        "text": "Is there a zoo nearby",
+        "intent": "zoo",
+        "entities": []
+      }, 
+      {
+        "text": "Take me to a zoo",
+        "intent": "zoo",
+        "entities": []
+      }, 
+      {
+        "text": "I want to go to a zoo",
+        "intent": "zoo",
+        "entities": []
+      },
+ 
+      {
+        "text": "Which beach is famous here",
+        "intent": "beach",
+        "entities": []
+      },
+      {
+        "text": "Find me a beach",
+        "intent": "beach",
+        "entities": []
+      },
+       {
+        "text": "Is there a beach nearby",
+        "intent": "beach",
+        "entities": []
+      }, 
+      {
+        "text": "Take me to a beach",
+        "intent": "beach",
+        "entities": []
+      }, 
+      {
+        "text": "I want to go to a beach",
+        "intent": "beach",
+        "entities": []
+      }, 
+ 
+      {
+        "text": "Which theatre is famous here",
+        "intent": "theatre",
+        "entities": []
+      },
+      {
+        "text": "Is there a theatre nearby",
+        "intent": "theatre",
+        "entities": []
+      },
+      {
+        "text": "Find me a theatre",
+        "intent": "theatre",
+        "entities": []
+      }, 
+      {
+        "text": "Take me to a theatre",
+        "intent": "theatre",
+        "entities": []
+      }, 
+      {
+        "text": "I want to go to a theatre",
+        "intent": "theatre",
+        "entities": []
+      }, 
+      {
+        "text": "Which mall is famous here",
+        "intent": "mall",
+        "entities": []
+      },
+      {
+        "text": "Find me a mall",
+        "intent": "mall",
+        "entities": []
+      },
+      {
+        "text": "Is there a mall nearby",
+        "intent": "mall",
+        "entities": []
+      }, 
+      {
+        "text": "Take me to a mall",
+        "intent": "mall",
+        "entities": []
+      }, 
+      {
+        "text": "I want to go to a mall",
+        "intent": "mall",
+        "entities": []
+      }, 
+      {
+        "text": "Is there a museum nearby",
+        "intent": "museum",
+        "entities": []
+      },
+      {
+        "text": "Find me a museum",
+        "intent": "museum",
+        "entities": []
+      }, 
+      {
+        "text": "Take me to a museum",
+        "intent": "museum",
+        "entities": []
+      }, 
+      {
+        "text": "I want to go to a museum",
+        "intent": "museum",
+        "entities": []
+      }, 
+     {
+        "text": "Which museum is famous here",
+        "intent": "museum",
+        "entities": []
+      }, 
+     {
+        "text": "Which park is famous here",
+        "intent": "park",
+        "entities": []
+      },
+      {
+        "text": "Is there a park nearby",
+        "intent": "park",
+        "entities": []
+      },
+      {
+        "text": "Find me a park",
+        "intent": "park",
+        "entities": []
+      }, 
+      {
+        "text": "Take me to a park",
+        "intent": "park",
+        "entities": []
+      }, 
+      {
+        "text": "I want to go to a park",
+        "intent": "park",
+        "entities": []
+      },
+      {
+        "text": "Which historic site is famous here",
+        "intent": "historic_site",
+        "entities": []
+      },
+      {
+        "text": "Find me a historic site",
+        "intent": "historic_site",
+        "entities": []
+      },
+      {
+        "text": "Is there a historic site nearby",
+        "intent": "historic_site",
+        "entities": []
+      }, 
+      {
+        "text": "Take me to a historic site",
+        "intent": "historic_site",
+        "entities": []
+      }, 
+      {
+        "text": "I want to go to a historic site",
+        "intent": "historic_site",
+        "entities": []
+      },
+
+      {
+        "text": "Which amusement park is famous here",
+        "intent": "amusement_park",
+        "entities": []
+      },
+      {
+        "text": "Is there a amusement park nearby",
+        "intent": "amusement_park",
+        "entities": []
+      },
+      {
+        "text": "Find me a amusement park",
+        "intent": "amusement_park",
+        "entities": []
+      }, 
+      {
+        "text": "Take me to a amusement park",
+        "intent": "amusement_park",
+        "entities": []
+      }, 
+      {
+        "text": "I want to go to a amusement park",
+        "intent": "amusement_park",
+        "entities": []
+      },
+      {
+        "text": "Which resort is famous here",
+        "intent": "resort",
+        "entities": []
+      },
+      {
+        "text": "Find me a resort",
+        "intent": "resort",
+        "entities": []
+      },
+      {
+        "text": "Is there a resort nearby",
+        "intent": "resort",
+        "entities": []
+      }, 
+      {
+        "text": "Take me to a resort",
+        "intent": "resort",
+        "entities": []
+      }, 
+      {
+        "text": "I want to go to a resort",
+        "intent": "resort",
+        "entities": []
+      },
+
+      {
+        "text": "bye", 
+        "intent": "goodbye", 
+        "entities": []
+      }, 
+      {
+        "text": "goodbye", 
+        "intent": "goodbye", 
+        "entities": []
+      }, 
+      {
+        "text": "good bye", 
+        "intent": "goodbye", 
+        "entities": []
+      }, 
+      {
+        "text": "stop", 
+        "intent": "goodbye", 
+        "entities": []
+      }, 
+      {
+        "text": "end", 
+        "intent": "goodbye", 
+        "entities": []
+      },
+      {
+        "text": "farewell",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "Bye bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "have a good one",
+        "intent": "goodbye",
+        "entities": []
+      }
+    ]
+  }
+}
