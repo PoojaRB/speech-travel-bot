@@ -1,0 +1,32 @@
+
+Intents :
+    1. greet
+    2. affirm
+    
+    3. summary
+    
+    4. address
+    5. phone
+    6. rating
+    7. opening_hours
+    8. price
+    9. distance
+    10.website
+    
+    11.restaurant_search
+    12.temple_search
+    13.mosque_search
+    14.church_search
+    15.worship_search
+    16.atm
+    17.zoo
+    18.beach
+    19.theatre
+    20.mall
+    21.museum
+    22.park
+    23.historic_site
+    24.amusement_park
+    25.resort
+    
+    26.goodbye

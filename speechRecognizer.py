@@ -1,6 +1,7 @@
 import speech_recognition as sr
 
 def recognize():
+    print("Speak")
     r = sr.Recognizer()
     with sr.Microphone() as source:
         r.adjust_for_ambient_noise(source)

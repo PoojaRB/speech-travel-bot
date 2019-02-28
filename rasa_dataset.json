@@ -323,6 +323,193 @@
         "intent": "rating",
         "entities": []
       },
+      {
+        "text": "I would like the opening hours of the place",
+        "intent": "opening_hours",
+        "entities": []
+      },
+      {
+        "text": "Is this place open now",
+        "intent": "opening_hours",
+        "entities": []
+      },
+       {
+        "text": "I want to know their opening hours",
+        "intent": "opening_hours",
+        "entities": []
+      },
+      {
+        "text": "Can you give me the opening hours of this place",
+        "intent": "opening_hours",
+        "entities": []
+      },
+      {
+        "text": "Give me the opening hours",
+        "intent": "opening_hours",
+        "entities": []
+      },
+      {
+        "text": "Give me the opening hours of the place",
+        "intent": "opening_hours",
+        "entities": []
+      },
+      {
+        "text": "I want the opening hours of this place",
+        "intent": "opening_hours",
+        "entities": []
+      },
+      {
+        "text": "Tell me the opening hours of this place",
+        "intent": "opening_hours",
+        "entities": []
+      },
+          {
+        "text": "What are the opening hours",
+        "intent": "opening_hours",
+        "entities": []
+      },
+      {
+        "text": "I would like to know the price level of the place",
+        "intent": "price",
+        "entities": []
+      },
+      {
+        "text": "Is this place very expensive?",
+        "intent": "price",
+        "entities": []
+      },
+       {
+        "text": "I want to know their price range",
+        "intent": "price",
+        "entities": []
+      },
+      {
+        "text": "Can you give me the price level of this place",
+        "intent": "price",
+        "entities": []
+      },
+      {
+        "text": "Give me the price",
+        "intent": "price",
+        "entities": []
+      },
+      {
+        "text": "Give me the price range of the place",
+        "intent": "price",
+        "entities": []
+      },
+      {
+        "text": "I want the price level of this place",
+        "intent": "price",
+        "entities": []
+      },
+      {
+        "text": "Tell me the price level of this place",
+        "intent": "price",
+        "entities": []
+      },
+          {
+        "text": "What is the price level ",
+        "intent": "price",
+        "entities": []
+      },
+       {
+        "text": "I would like to know the distance of the place from here",
+        "intent": "distance",
+        "entities": []
+      },
+      {
+        "text": "Is this place very far",
+        "intent": "distance",
+        "entities": []
+      },
+       {
+        "text": "I want to know the distance",
+        "intent": "distance",
+        "entities": []
+      },
+      {
+        "text": "Can you give me the distance of this place from me",
+        "intent": "distance",
+        "entities": []
+      },
+      {
+        "text": "Give me the distance from here",
+        "intent": "distance",
+        "entities": []
+      },
+      {
+        "text": "How far is this place",
+        "intent": "distance",
+        "entities": []
+      },
+      {
+        "text": "How far is it",
+        "intent": "distance",
+        "entities": []
+      },
+      {
+        "text": "I want the distance of this place from here",
+        "intent": "distance",
+        "entities": []
+      },
+      {
+        "text": "Tell me the distance of this place from here",
+        "intent": "distance",
+        "entities": []
+      },
+      {
+        "text": "What is the distance of this place from here ",
+        "intent": "distance",
+        "entities": []
+      },
+
+      
+       {
+        "text": "I would like to know the official website of the place",
+        "intent": "website",
+        "entities": []
+      },
+      {
+        "text": "Does this place have a website?",
+        "intent": "website",
+        "entities": []
+      },
+       {
+        "text": "I want to know their official website",
+        "intent": "website",
+        "entities": []
+      },
+      {
+        "text": "Can you give me the website of this place",
+        "intent": "website",
+        "entities": []
+      },
+      {
+        "text": "Give me the website",
+        "intent": "website",
+        "entities": []
+      },
+      {
+        "text": "Give me the official website of the place",
+        "intent": "website",
+        "entities": []
+      },
+      {
+        "text": "I want the website of this place",
+        "intent": "website",
+        "entities": []
+      },
+      {
+        "text": "Tell me the website of this place",
+        "intent": "website",
+        "entities": []
+      },
+      {
+        "text": "What is the official website ",
+        "intent": "website",
+        "entities": []
+      },
 
       {
         "text": "i'm looking for a place to eat",
@@ -356,6 +543,11 @@
       
       {
         "text": "search for restaurants",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
+        "text": "find me a restaurant",
         "intent": "restaurant_search",
         "entities": []
       },
