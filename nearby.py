@@ -1,10 +1,7 @@
 import speechSynthesizer 
 import speechRecognizer
-import spacy
 import placeApi
 import dict
-import rasa_testing as rt
-
 
 def findNearbyPlace(nou):
     total_results= []
@@ -28,8 +25,8 @@ def findNearbyPlace(nou):
                 x+=1
                 i+=1
         speechSynthesizer.synthesize("Choose one of the places. (Specify the number)")
-        #print("Speak")
-        rep = int(speechRecognizer.recognize())
+        num = speechRecognizer.recognize()
+        rep = int(num)
         print(total_results[rep-1][1])
     return total_results[rep-1][4]
         

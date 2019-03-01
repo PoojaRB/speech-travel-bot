@@ -32,7 +32,7 @@ def findThePlaces(domainName):
                 vicinity = "not available"
             place_id = result['place_id']
             #website = get_place_website(place_id)
-            print([business_type, place_name,vicinity,rating,place_id])
+            #print([business_type, place_name,vicinity,rating,place_id])
             total_results.append([business_type, place_name,rating,vicinity,place_id])
     	try:
     		next_page_token = python_object["next_page_token"]
