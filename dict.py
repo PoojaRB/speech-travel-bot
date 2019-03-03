@@ -1,6 +1,7 @@
 
 def getBusinessType(nou):
     categories = {
+            "bakery":["bakery","bakery_search"],
             "cafe" : ["Cafe","Cafes"],
             "church" : ["Churches","Church","church","church_search"],
             "hindu_temple" : ["temple","temples","temple_search"],
@@ -9,7 +10,8 @@ def getBusinessType(nou):
             "mosque" : ["Mosque","mosque_search"],
             "movie_theater" : ["theater","movie","theatre"],
             "shopping_mall" : ["mall","shopping"],
-            "place_of_worship" : ["worship","place of worship","worship_search"]
+            "place_of_worship" : ["worship","place of worship","worship_search"],
+            "zoo":["zoo"]
             }
     
     key = ''

@@ -6,6 +6,6 @@ def findIntent(queryString):
     finalIntent = interpreter.parse(queryString)
     return finalIntent['intent']['name']
 
-print(findIntent("Give me the price"))
+#print(findIntent("i want atm"))
     
 

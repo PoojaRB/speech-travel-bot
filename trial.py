@@ -44,7 +44,8 @@ while placeId == None:
     print(category)
     placeId = nearby.findNearbyPlace(category) #gets the places based on the category
     print(placeId) #place id of the place selected for further details 
-    pd.getFilteredDetails(placeId)
+    if placeId != None :
+        pd.getFilteredDetails(placeId)
 
 
     

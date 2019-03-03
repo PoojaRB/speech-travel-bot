@@ -1,9 +1,10 @@
 import math
 
-def distance(origin, destination):
+origin = (12.751587, 80.203681)
+def distance(destination):
     lat1, lon1 = origin
     lat2, lon2 = destination
-    radius = 6367 # km
+    radius = 6378 # km
 
     dlat = math.radians(lat2-lat1)
     dlon = math.radians(lon2-lon1)
@@ -14,4 +15,4 @@ def distance(origin, destination):
 
     return d
 
-print(distance((13.087504, 80.256310),(12.751353, 80.204126)))
+#print(distance((12.751353, 80.204126)))
