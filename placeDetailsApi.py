@@ -42,33 +42,42 @@ days = {
        "Sunday": 0
         }
 
+
 def getFilteredDetails(placeId):
     ss.synthesize("What would you like to know about this place")
-    response = sr.recognize();
-    intent = rt.findIntent(response)
-    print(intent)
-    if intent in filter_list :
-        reqURL = ('https://maps.googleapis.com/maps/api/place/details/json?placeid='+placeId+'&key='+api_key)
-        response = requests.get(reqURL)
-        result = json.loads(response.content.decode('utf-8'))
-        r = result['result']
-        print(r['name'])
-        getPlaceDetails(placeId,r,intent)
-        ss.synthesize("Do you want to know anything more (yes/no")
-        response = sr.recognize()
-        if response == "yes":
+    response = sr.recognize()
+    if response == None:
+        getFilteredDetails(placeId)
+    else:
+        intent = rt.findIntent(response)
+        #print(intent)
+        if intent in filter_list :
+            reqURL = ('https://maps.googleapis.com/maps/api/place/details/json?placeid='+placeId+'&key='+api_key)
+            response = requests.get(reqURL)
+            result = json.loads(response.content.decode('utf-8'))
+            r = result['result']
+            #print(r['name'])
+            getPlaceDetails(placeId,r,intent)
+            ss.synthesize("Do you want to know anything more (yes/no)")
+            response = sr.recognize()
+            if response == "yes":
+                getFilteredDetails(placeId)
+            else:
+                ss.synthesize("Thank you")        
+        else :
+            ss.synthesize("Sorry we dont have these details, ask something else!")
             getFilteredDetails(placeId)
-        
-    else :
-        ss.synthesize("Sorry we dont have these details, ask something else!")
-        #getFilteredDetails(placeId)
 
 
 def getPlaceDetails(placeId,r,intent):
     try:
         if intent == "summary":
             var = r['name']
-            ss.synthesize(wikipedia.summary(var))
+            try :
+                ss.synthesize(wikipedia.summary(var, sentences=1, auto_suggest=False))
+            except wikipedia.exceptions.PageError:
+                ss.synthesize("Sorry we do not have summary for "+var)
+                getFilteredDetails(placeId)
         elif intent == "address":
             ss.synthesize("The address of this place is "+ r['formatted_address'] )
         elif intent == "phone":
@@ -95,7 +104,8 @@ def getPlaceDetails(placeId,r,intent):
             ss.synthesize("Sorry your query is invalid")
             getFilteredDetails(placeId)
     except KeyError :
-        print("The details related to "+intent+" are not available")
+        ss.synthesize("The details related to "+intent+" are not available")
+        getFilteredDetails(placeId)
 
 
 def getOpeningDetails(r):

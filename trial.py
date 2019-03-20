@@ -18,7 +18,12 @@ category_list ={"restaurant_search",
 "park",
 "historic_site",
 "amusement_park",
-"resort"}
+"resort",
+"cafe_search",
+"bakery_search",
+"pharmacy_search",
+"lodging_search",
+"supermarket_search"}
 
 placeId = None
 flag = 0
@@ -29,24 +34,27 @@ def getCategory():
     nou=''
     #category search
     toSpeak=sr.recognize()
-    nou=rt.findIntent(toSpeak)
-    print("INTENT OUTPUT:"+nou)
-    if nou in category_list :
-        return nou
-    else :
-        ss.synthesize("Sorry didnt get that")
+    if toSpeak == None :
         getCategory()
-            #return None
+    else:
+        nou=rt.findIntent(toSpeak)
+        print("INTENT OUTPUT:"+nou)
+        if nou in category_list :
+            return nou     
+        else :
+            ss.synthesize("Sorry didnt get that")
+            getCategory()
+                #return None
 
         
 while placeId == None:
     category = getCategory()
-    print(category)
+    #print(category)
     placeId = nearby.findNearbyPlace(category) #gets the places based on the category
-    print(placeId) #place id of the place selected for further details 
+    #print(placeId) #place id of the place selected for further details 
     if placeId != None :
         pd.getFilteredDetails(placeId)
-
+        #placeId = None
 
     
 

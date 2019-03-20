@@ -168,7 +168,7 @@
         "entities": []
       },
        {
-        "text": "I would like to the address of the place",
+        "text": "I would like to know the address of the place",
         "intent": "address",
         "entities": []
       },
@@ -330,6 +330,11 @@
       },
       {
         "text": "Is this place open now",
+        "intent": "opening_hours",
+        "entities": []
+      },
+      {
+        "text": "what time does it open",
         "intent": "opening_hours",
         "entities": []
       },
@@ -637,6 +642,249 @@
           }
         ]
       },
+      {
+        "text": "Take me to a cafe",
+        "intent": "cafe_search",
+        "entities": []
+      },
+      {
+        "text": "Is there a cafe nearby",
+        "intent": "cafe_search",
+        "entities": []
+      },
+      {
+        "text": "Are there any cafes around",
+        "intent": "cafe_search",
+        "entities": []
+      },
+      {
+        "text": "I would like to visit a cafe today",
+        "intent": "cafe_search",
+        "entities": []
+      },
+      {
+        "text": "I want to go to a cafe today",
+        "intent": "cafe_search",
+        "entities": []
+      }, 
+      {
+        "text": "Show me some cafes",
+        "intent": "cafe_search",
+        "entities": []
+      },
+      {
+        "text": "cafe near me",
+        "intent": "cafe_search",
+        "entities": []
+      },
+      {
+        "text": "take me to a bakery",
+        "intent": "bakery_search",
+        "entities": []
+      },
+      {
+        "text": "is there a bakery nearby",
+        "intent": "bakery_search",
+        "entities": []
+      },
+      {
+        "text": "are there any bakeries around",
+        "intent": "bakery_search",
+        "entities": []
+      },
+      {
+        "text": "i would like to visit a bakery today",
+        "intent": "bakery_search",
+        "entities": []
+      },
+      {
+        "text": "i want to go to a bakery today",
+        "intent": "bakery_search",
+        "entities": []
+      }, 
+      {
+        "text": "show me some bakeries",
+        "intent": "bakery_search",
+        "entities": []
+      },
+      {
+        "text": "find me a bakery near me",
+        "intent": "bakery_search",
+        "entities": []
+      },
+    {
+        "text": "take me to a supermarket",
+        "intent": "supermarket_search",
+        "entities": []
+      },
+      {
+        "text": "Is there a supermarket nearby",
+        "intent": "supermarket_search",
+        "entities": []
+      },
+      {
+        "text": "Are there any supermarkets around",
+        "intent": "supermarket_search",
+        "entities": []
+      },
+      {
+        "text": "I would like to visit a supermarket today",
+        "intent": "supermarket_search",
+        "entities": []
+      },
+      {
+        "text": "I want to go to a supermarket today",
+        "intent": "supermarket_search",
+        "entities": []
+      }, 
+      {
+        "text": "Show me some supermarkets",
+        "intent": "supermarket_search",
+        "entities": []
+      },
+      {
+        "text": "supermarket near me",
+        "intent": "supermarket_search",
+        "entities": []
+      },
+
+      {
+        "text": "Take me to a lodging",
+        "intent": "lodging_search",
+        "entities": []
+      },
+      {
+        "text": "Take me to a hotel",
+        "intent": "lodging_search",
+        "entities": []
+      },
+      {
+        "text": "Take me to some hotel",
+        "intent": "lodging_search",
+        "entities": []
+      },
+      {
+        "text": "Is there any lodging nearby",
+        "intent": "lodging_search",
+        "entities": []
+      },
+      {
+        "text": "Is there any hotel nearby",
+        "intent": "lodging_search",
+        "entities": []
+      },
+      {
+        "text": "Is there any place to stay nearby",
+        "intent": "lodging_search",
+        "entities": []
+      },
+      {
+        "text": "Are there any lodges around",
+        "intent": "lodging_search",
+        "entities": []
+      },
+      {
+        "text": "Are there any hotels around",
+        "intent": "lodging_search",
+        "entities": []
+      },
+      {
+        "text": "Are there any places to stay around",
+        "intent": "lodging_search",
+        "entities": []
+      },
+      {
+        "text": "I would like to stay at a lodging today",
+        "intent": "lodging_search",
+        "entities": []
+      },
+      {
+        "text": "I would like to stay at a hotel today",
+        "intent": "lodging_search",
+        "entities": []
+      },
+      {
+        "text": "I would like a place to stay today",
+        "intent": "lodging_search",
+        "entities": []
+      },
+      {
+        "text": "I want to go to a lodging today",
+        "intent": "lodging_search",
+        "entities": []
+      }, 
+      {
+        "text": "I want to go to a hotel today",
+        "intent": "lodging_search",
+        "entities": []
+      }, 
+      {
+        "text": "Show me some lodgings",
+        "intent": "lodging_search",
+        "entities": []
+      },
+      {
+        "text": "Show me some hotels",
+        "intent": "lodging_search",
+        "entities": []
+      },
+      {
+        "text": "lodging near me",
+        "intent": "lodging_search",
+        "entities": []
+      },
+      {
+        "text": "Hotel near me",
+        "intent": "lodging_search",
+        "entities": []
+      },
+      {
+        "text": "Hotels near me",
+        "intent": "lodging_search",
+        "entities": []
+      },
+      {
+        "text": "Places to stay near me",
+        "intent": "lodging_search",
+        "entities": []
+      },
+
+     {
+        "text": "Take me to a pharmacy",
+        "intent": "pharmacy_search",
+        "entities": []
+      },
+      {
+        "text": "Is there a pharmacy nearby",
+        "intent": "pharmacy_search",
+        "entities": []
+      },
+      {
+        "text": "Are there any pharmacies around",
+        "intent": "pharmacy_search",
+        "entities": []
+      },
+      {
+        "text": "I would like to visit a pharmacy today",
+        "intent": "pharmacy_search",
+        "entities": []
+      },
+      {
+        "text": "I want to go to a pharmacy today",
+        "intent": "pharmacy_search",
+        "entities": []
+      }, 
+      {
+        "text": "Show me some pharmacies",
+        "intent": "pharmacy_search",
+        "entities": []
+      },
+      {
+        "text": "pharmacy near me",
+        "intent": "pharmacy_search",
+        "entities": []
+      },
+
       {
         "text": "Take me to temple",
         "intent": "temple_search",

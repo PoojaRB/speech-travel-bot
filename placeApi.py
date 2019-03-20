@@ -43,7 +43,8 @@ def findThePlaces(domainName):
     
     
     
-    get_nearby_places('12.923635, 80.118106', domainName , '')
+    get_nearby_places('12.751419, 80.196960', domainName , '') #college
+   # get_nearby_places('12.923635, 80.118106', domainName , '') #tambaram
   #  get_nearby_places('9.922209, 78.115099', domainName , '')
     
     return total_results

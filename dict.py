@@ -1,17 +1,23 @@
 
 def getBusinessType(nou):
     categories = {
-            "bakery":["bakery","bakery_search"],
-            "cafe" : ["Cafe","Cafes"],
+            "bakery":["bakery","bakery_search","bakeries"],
+            "cafe" : ["Cafe","Cafes","cafe","cafe_search"],
             "church" : ["Churches","Church","church","church_search"],
             "hindu_temple" : ["temple","temples","temple_search"],
-            "lodging" : ["hotels","hotel","place to stay"],
+            "lodging" : ["hotels","hotel","place to stay","lodging_search"],
             "restaurant" : ["restaurants","Restaurants","restaurant_search"],
-            "mosque" : ["Mosque","mosque_search"],
-            "movie_theater" : ["theater","movie","theatre"],
+            "mosque" : ["Mosque","mosque_search","mosques","mosque"],
+            "movie_theater" : ["theater","movie","theatre","theatres","theaters","movies"],
             "shopping_mall" : ["mall","shopping"],
             "place_of_worship" : ["worship","place of worship","worship_search"],
-            "zoo":["zoo"]
+            "zoo" : ["zoo","zoos"],
+            "pharmacy" : ["pharmacies","pharmacy_search"],
+            "supermarket" : ["Supermarkets","supermarket","supermarket_search"],
+            "atm" : ["atms","ATM","ATMs"],
+            "beach" : ["beaches","beach"],
+            "museum" : ["museum","museum_search"],
+            "park" : ["park","park_search"] 
             }
     
     key = ''
