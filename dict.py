@@ -1,5 +1,6 @@
 
 def getBusinessType(nou):
+    print(nou)
     categories = {
             "bakery":["bakery","bakery_search","bakeries"],
             "cafe" : ["Cafe","Cafes","cafe","cafe_search"],

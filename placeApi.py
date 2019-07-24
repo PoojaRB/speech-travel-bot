@@ -12,7 +12,7 @@ def findThePlaces(domainName):
     total_results = []
     def get_nearby_places(coordinates, business_type, next_page):
     	URL = ('https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='
-    		+coordinates+'&radius=10000&key='+ api_key +'&type='
+    		+coordinates+'&radius=20000&key='+ api_key +'&type='
     		+business_type+'&pagetoken='+next_page)
     	r = requests.get(URL)
     	response = r.text

@@ -7,6 +7,7 @@ import speechSynthesizer as ss
 import distance as distFinder
 import math
 import wikipedia
+import sys
 
 
 def truncate(number, digits) -> float:
@@ -63,7 +64,8 @@ def getFilteredDetails(placeId):
             if response == "yes":
                 getFilteredDetails(placeId)
             else:
-                ss.synthesize("Thank you")        
+                ss.synthesize("Thank you") 
+                exit
         else :
             ss.synthesize("Sorry we dont have these details, ask something else!")
             getFilteredDetails(placeId)
@@ -111,7 +113,6 @@ def getPlaceDetails(placeId,r,intent):
 def getOpeningDetails(r):
     currentDay = datetime.datetime.now().strftime("%A")
     print(currentDay)
-    day = days[currentDay]
     daysDetails = r['opening_hours']['weekday_text']
     for x in daysDetails:
         if str(x).find(currentDay) != -1:

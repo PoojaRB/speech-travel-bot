@@ -9,7 +9,7 @@ def findNearbyPlace(nou):
     x=1
     ch=0
     btype = dict.getBusinessType(nou)
-    #print(btype)
+    print(btype)
     if btype == None :
         speechSynthesizer.synthesize("I am sorrry we do not have details for this place yet")
         return None
@@ -31,6 +31,7 @@ def findNearbyPlace(nou):
         speechSynthesizer.synthesize("Choose one of the places. (Specify the number)")
         ch = getChoice()
         #print(ch)
+        speechSynthesizer.synthesize("You have chosen "+total_results[ch-1][1])
         print(total_results[ch-1][1])
     return total_results[ch-1][4]
                         

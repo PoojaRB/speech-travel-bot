@@ -6,8 +6,7 @@ def findIntent(queryString):
     finalIntent = interpreter.parse(queryString)
     return finalIntent['intent']['name']
 
-print(findIntent("I want a place to eat"))
-#listtest ={
+##listtest ={
         #"Can you brief me about the place ",
 #"Can you brief me about this place",
 #"Can you brief me about that place",
